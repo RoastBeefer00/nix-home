@@ -1,0 +1,68 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Cartograph CF Nerd Font, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: #cdd6f4;
+}
+
+tooltip {}
+
+#workspaces button {}
+
+#workspaces button.active {
+  color: #9ccfd8;
+}
+
+#workspaces button.focused {
+  color: #9ccfd8;
+}
+
+#workspaces button.urgent {}
+
+#workspaces button:hover {}
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {}
+
+#tray {}
+
+#workspaces {}
+
+#custom-caffeine {}
+
+#custom-language {}
+
+#custom-updates {}
+
+#window {}
+
+#clock {}
+
+#network {}
+
+#pulseaudio {}
+
+#pulseaudio.microphone {}
+
+#battery {}
+
+#custom-weather {}
+
+#custom-endright {}
