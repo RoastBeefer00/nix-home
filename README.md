@@ -44,6 +44,7 @@ cd nix-home
 
 Use vim (or whatever text editor you prefer) to edit `home.nix` and change the first few lines from `roastbeefer` to your own user:
 > NOTE: Use command `whoami` if you don't know your username
+
 > NOTE: There are probably many refences to the `roastbeefer` user in this file and potentially others like `.zshrc`... sorry you're gonna have to find and replace these
 ```
   home.username = "roastbeefer";
