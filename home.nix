@@ -221,18 +221,26 @@
   home.packages = [
     pkgs.bat
     pkgs.brightnessctl
+    pkgs.cargo
+    pkgs.clippy
     pkgs.cowsay
     pkgs.eza
     pkgs.fira-code-nerdfont
     pkgs.gcc
+    pkgs.glow
+    pkgs.go
     pkgs.hyprshot
     pkgs.kmonad
     pkgs.mise
     pkgs.neovim
     pkgs.nodejs
+    pkgs.openssl
     pkgs.opentofu
+    pkgs.pkg-config
     pkgs.ripgrep
     pkgs.rofi-wayland
+    pkgs.rustc
+    pkgs.rustfmt
     pkgs.swaybg
     pkgs.thefuck
     pkgs.wl-clipboard
