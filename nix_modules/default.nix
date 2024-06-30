@@ -1,6 +1,7 @@
 { lib, ... }: {
     imports = [
       ./btop.nix
+      ./direnv.nix
       ./hyprland.nix
       ./mako.nix
       ./rofi.nix

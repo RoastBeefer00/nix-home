@@ -24,12 +24,12 @@
     pkgs.cargo
     pkgs.clippy
     pkgs.cowsay
+    pkgs.devenv
     pkgs.eza
     pkgs.fira-code-nerdfont
     pkgs.gcc
     pkgs.glow
     pkgs.go
-    pkgs.google-cloud-sdk
     pkgs.hyprshot
     pkgs.kmonad
     pkgs.mise
