@@ -2,7 +2,7 @@ source ~/.zsh_profile
 
 export EDITOR="nvim"
 export PATH="$PATH:$HOME/.cargo/bin"
-export PATH=$PATH:$(go env GOPATH)/bin
+# export PATH=$PATH:$(go env GOPATH)/bin
 
 
 function vim() {
@@ -22,6 +22,16 @@ function dopush() {
 function new_branch() {
     gco -b $@
     git push --set-upstream origin  $@
+}
+
+function update() {
+    dir=$(pwd)
+    cd ~/.config/home-manager
+    echo "Updating flake..."
+    nix flake update
+    echo "Updating home-manager..."
+    home-manager switch
+    cd $dir
 }
 
 # Wasmer

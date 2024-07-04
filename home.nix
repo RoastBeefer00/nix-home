@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "roastbeefer";
@@ -21,27 +21,18 @@
   home.packages = [
     pkgs.bat
     pkgs.brightnessctl
-    pkgs.cargo
     pkgs.clippy
     pkgs.cowsay
     pkgs.devenv
     pkgs.eza
     pkgs.fira-code-nerdfont
-    pkgs.gcc
     pkgs.glow
-    pkgs.go
+    pkgs.chromium
     pkgs.hyprshot
     pkgs.kmonad
     pkgs.mise
-    pkgs.neovim
-    pkgs.nodejs
-    pkgs.openssl
-    pkgs.opentofu
-    pkgs.pkg-config
     pkgs.ripgrep
     pkgs.rofi-wayland
-    pkgs.rustc
-    pkgs.rustfmt
     pkgs.skim
     pkgs.swaybg
     pkgs.thefuck

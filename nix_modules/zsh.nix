@@ -36,7 +36,7 @@
     ];
 
     shellAliases = {
-      update = "home-manager switch";
+      # update = "home-manager switch";
       nv = "nvim .";
       edit = "nvim ~/.config/home-manager/home.nix";
       ll = "eza -la";
@@ -44,8 +44,7 @@
       tree = "eza --tree";
     };
 
-    envExtra = ''
-    '';
+    envExtra = "";
 
     initExtra = builtins.readFile ../.zshrc;
 
