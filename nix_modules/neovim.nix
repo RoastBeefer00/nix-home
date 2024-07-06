@@ -31,9 +31,9 @@
       pkgs.nixfmt-rfc-style
       pkgs.nodePackages.dockerfile-language-server-nodejs
       pkgs.nodePackages.typescript-language-server
-      pkgs.nodePackages.vscode-css-languageserver-bin
-      pkgs.nodePackages.vscode-html-languageserver-bin
-      pkgs.nodePackages.vscode-json-languageserver-bin
+      pkgs.nodePackages.vscode-langservers-extracted
+      # pkgs.nodePackages.vscode-html-languageserver-bin
+      # pkgs.nodePackages.vscode-json-languageserver-bin
       pkgs.prettierd
       pkgs.pyright
       pkgs.rust-analyzer

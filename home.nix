@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "roastbeefer";
@@ -33,6 +34,7 @@
     pkgs.mise
     pkgs.ripgrep
     pkgs.rofi-wayland
+    pkgs.rofi-power-menu
     pkgs.skim
     pkgs.swaybg
     pkgs.thefuck

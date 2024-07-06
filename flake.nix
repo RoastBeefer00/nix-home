@@ -10,19 +10,22 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs =
+    { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-    in {
+    in
+    {
       homeConfigurations."roastbeefer" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ 
-            ./home.nix 
-            ./nix_modules
+        modules = [
+          ./home.nix
+          ./nix_modules
+          # ./nixvim/flake.nix
         ];
 
         # Optionally use extraSpecialArgs
