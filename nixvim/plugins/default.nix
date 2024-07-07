@@ -13,6 +13,7 @@
     ./oil.nix
     ./rainbow-delimiters.nix
     ./smart-splits.nix
+    ./sort.nix
     ./surround.nix
     ./todo.nix
     ./telescope.nix

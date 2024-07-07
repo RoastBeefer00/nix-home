@@ -20,7 +20,9 @@
     };
     opts = {
       # Show line numbers
+      expandtab = true;
       number = true;
+      # guicursor = "";
       # You can also add relative line numbers, to help with jumping.
       #  Experiment for yourself to see if you like it!
       relativenumber = true;
@@ -31,7 +33,6 @@
       # Don't show the mode, since it's already in the statusline
       showmode = false;
       smartindent = true;
-      backup = true;
 
       # Sync clipboard between OS and Neovim
       #  Remove this option if you want your OS clipboard to remain independent.
@@ -365,14 +366,7 @@
     extraPlugins = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
       nvim-web-devicons # TODO: Figure out how to configure using this with telescope
-      sort-nvim
-      nvim-ts-autotag
     ];
-
-    extraConfigLua = ''
-      require("sort").setup({})
-      require("nvim-ts-autotag").setup({})
-    '';
 
     # TODO: Figure out where to move this
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapre
