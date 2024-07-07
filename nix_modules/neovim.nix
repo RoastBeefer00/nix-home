@@ -14,7 +14,7 @@
 {
 
   programs.neovim = {
-    enable = true;
+    enable = false;
     defaultEditor = true;
     extraPackages = [
       pkgs.bash-language-server

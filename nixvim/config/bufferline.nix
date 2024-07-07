@@ -1,5 +1,0 @@
-{
-  plugins.bufferline = {
-    enable = true;
-  };
-}
