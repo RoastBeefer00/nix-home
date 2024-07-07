@@ -8,6 +8,7 @@
     ./fugitive.nix
     ./gitsigns.nix
     ./harpoon.nix
+    ./hop.nix
     ./lsp.nix
     ./nvim-cmp.nix
     ./oil.nix

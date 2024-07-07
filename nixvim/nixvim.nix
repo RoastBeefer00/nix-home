@@ -74,7 +74,7 @@
       # Preview subsitutions live, as you type!
       inccommand = "split";
       incsearch = true;
-      termguicolors = true;
+      # termguicolors = true;
 
       # Show which line your cursor is on
       cursorline = true;
