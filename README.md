@@ -42,13 +42,21 @@ git clone https://github.com/RoastBeefer00/nix-home.git
 cd nix-home
 ```
 
-Use vim (or whatever text editor you prefer) to edit `home.nix` and change the first few lines from `roastbeefer` to your own user:
+Use vim (or whatever text editor you prefer) to edit `home.nix`, `flake.nix` and `.zshrc` and change the first few lines from `roastbeefer` to your own user:
 > NOTE: Use command `whoami` if you don't know your username
 
-> NOTE: There are probably many refences to the `roastbeefer` user in this file and potentially others like `.zshrc`... sorry you're gonna have to find and replace these
+> NOTE: There are multiple refences to the `roastbeefer` user in this file and others like `.zshrc`... sorry you're gonna have to find and replace these
 ```
   home.username = "roastbeefer";
   home.homeDirectory = "/home/roastbeefer";
+
+  ...
+
+  export WASMER_DIR="/home/roastbeefer/.wasmer"
+
+  ...
+
+  homeConfigurations."roastbeefer" = home-manager.lib.homeManagerConfiguration {
 ```
 
 Copy these files to your home config:
